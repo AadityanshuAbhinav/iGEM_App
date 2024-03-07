@@ -1,6 +1,7 @@
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
+    font-size: larger;
     color: white;
     margin: 0;
     padding: 20px;
@@ -18,21 +19,21 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.4); /* Adjust opacity here */
+    background-color: rgba(141, 175, 128, 0.75); /* Adjust opacity here */
     z-index: -1;
 }
 
 /* Navigation Bar */
 nav ul {
     list-style: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     text-align: right; /* Aligns the list items to the right  */
 }
 
 nav li {
     display: inline; /* Makes list items display horizontally */
-    margin-left: 20px; 
+    margin-left: 10px; 
 }
 
 /* Link styling */
@@ -41,7 +42,74 @@ nav a {
     color: white; /* Adjust link color as desired */
 } 
 
-/* Floating text */
-.floating-text {
-        float: left;
+/* Footer */
+.myFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: x-small;
+}
+
+/* Flex properties */
+.myFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+/* myDiv properties */
+.myDiv {
+    color: white; 
+    max-width: 85%;
+    text-align: center; 
+    align-self: center;
+}
+
+/* Flex properties */
+.noFlex{
+  display: flex;
+  flex-direction: row;
+}
+
+/* yourDiv properties */
+.yourDiv {
+    color: white; 
+    max-width: 40%;
+    margin-top: 1.5%;
+    margin-left: 47.5%;
+}
+
+/* Image propoerties */
+#img2 {
+    margin-left: 40px;
+}
+
+/* Responsive properties */
+@media screen and (max-width: 600px) {
+    .yourDiv {
+        margin-left: 30%;
     }
+    #img2 {
+        margin-left: 10px;
+    }
+    body {
+        background-position: 90%;
+    }
+    body::before {
+        background-color: rgba(141, 175, 128, 0.35); /* Adjust opacity here */
+    }
+}
+
+/* Heading properties */
+.myHead {
+    background-color: lightgreen;
+}
+
+/* Image properties */
+.myImg {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
